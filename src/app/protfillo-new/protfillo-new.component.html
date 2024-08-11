@@ -1,0 +1,479 @@
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top " [ngClass]="{'navbar-fixed': isNavbarFixed}">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../../assets/images/me.png" class="img-fluid" alt="Logo">
+                Devel_SPK
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto bDruwu ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- User -->
+
+
+
+    <section id="home" class="hero-section justify-content-center align-items-center p-2">
+        <div class="container-fluid">
+            <div class="container" data-aos="fade-right">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 p-3">
+                        <div class="hero-image text-center">
+                            <img src="../../assets/images/heroImage.png" alt="Me" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 p-3"> <!-- Adjust column size for responsiveness -->
+                        <div class="hero-content text-center">
+                            <!-- <p><span>Hello, World.</span></p> Corrected span tag placement -->
+                            <h2>Hi There, I'm Premkumar S</h2>
+                            <h2 class="main-title"><span>{{dynamicContent}}</span></h2>
+                            <!-- <p>Passionate Software Engineer with a focus on Full Stack development,
+                                dedicated to crafting elegant and user-friendly mobile applications.</p> -->
+                            <p>A passionate Mean stack developer with over 2+ of
+                                experience in building dynamic web applications. My journey into the world of
+                                programming began with a fascination for creating solutions that impact people's lives
+                                positively. Over the years, I've honed my skills in JavaScript, AngularJS, Node.js,
+                                MongoDB, and Express.js to craft robust, scalable, and efficient applications. </p>
+                            <button class="btn btn-primary" (click)="scrollToContact()">Contact Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About -->
+
+
+    <section id="about" class="about-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-md-6">
+                        <div class="about-image">
+                            <img src="../../assets/images/Prem_Hero1.jpg" class="img-fluid" alt="About Me Image">
+                        </div>
+                    </div> -->
+                    <div class="col-md-6">
+                        <div class="about-content text-center" data-aos="zoom-in">
+                            <h2>ABOUT ME</h2>
+                            <h3><span>MEAN Stack Developer</span> </h3>
+
+                            <p>I have over 2+ years of experience in web development as a MEAN Stack Developer. My
+                                skills
+                                include <span>Angular, HTML, and CSS.</span> I have experience with both web-based,
+                                multi-threaded
+                                applications, as well as front-end and back-end development using <span>Node.js,
+                                    Express.js,
+                                    MongoDB, and MySQL,</span> utilizing the latest web technologies.
+                                Additionally, I am proficient in developing customer service-oriented applications
+                                with
+                                solid test automation strategies.</p>
+
+                            <p>In my previous roles, I've had the opportunity to contribute to both service and
+                                project-oriented initiatives, showcasing my versatility across front-end and
+                                back-end
+                                development. Within service projects, I've effectively utilized Blockchain
+                                technologies,
+                                including <span> trade, swap, liquidity, stake, NFT, and e-commerce</span> Beyond my
+                                coding
+                                proficiency, I possess the capability to conduct technical analyses and provide
+                                valuable
+                                support in project management for clients.
+                            </p>
+
+                            <div class="skills-content">
+                                <p><span>Skills : MEAN Stack Developer | Front-end Developer | Back-end Developer
+                                        |
+                                        Web Designer | Web Developer </span></p>
+                                <button class="btn btn-primary" (click)="openResume()">Download CV</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Experience -->
+    <section id="experience" class="experience-section">
+        <div class="container-fluid">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="experience-main_title">Know More</h2>
+                        <h6 class="experience-main_subtitle">Below are specific details of my education and experience.
+                        </h6>
+                    </div>
+                </div>
+                <div class="row" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                    data-aos-duration="500">
+                    <div class="col-md-6">
+                        <div class="education-item">
+                            <div class="dot"></div>
+                            <div class="education-content">
+                                <h3 class="education-title"><span>Education</span></h3>
+                                <h4>BCA - Kalasalingam University College</h4>
+                                <h5 class="mt-3">2017-2020</h5>
+                                <p class="mt-3">I pursued computer science and graduated with honors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="professional-item">
+                            <div class="dot"></div>
+                            <div class="professional-content">
+                                <h3 class="professional-title"><span>Professional Experience</span></h3>
+                                <h4>Programmer at Osiz Technologies</h4>
+                                <h5 class="mt-3">2022-2024</h5>
+                                <p class="mt-3">As a programmer managing a team with multiple web application projects,
+                                    we handle blockchain, MLM, Trade, Swap, Liquidity, Stake, NFT, and E-commerce
+                                    concepts by integrating smart contracts from start to finish in our projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Project-->
+
+
+    <section id="project" class="project-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center p-4">
+                        <h2>Look at My <span>projects.</span> </h2>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up">
+                        <div class="card bdDvrh m-2 p-3">
+                            <img src="../../assets/images/koinpark.png" class="card-img-top" alt="Image 1">
+                            <div class="sc-fXSgeo hzOFvQ p-2">
+                                <span class="sc-JrDLc cGwAnN">Node.js</span>
+                                <span class="sc-JrDLc cGwAnN">Express.js</span>
+                                <span class="sc-JrDLc cGwAnN">Mysql</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Koin Park</h5>
+                                <p class="card-text">Koinpark Platform is an automated cryptocurrency trading platform
+                                    built on top of cryptocurrency. It empowers users to create crypto vaults and crypto
+                                    addresses, facilitating the deposit of cryptocurrencies into their respective
+                                    accounts.
+                                    Additionally, the platform manages the MongoDB database and implements Node.js for
+                                    backend API integration in this project. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up">
+                        <div class="card bdDvrh  m-2 p-3">
+                            <img src="../../assets/images/CICCA.png" class="card-img-top" alt="Image 2">
+                            <div class="sc-fXSgeo hzOFvQ p-2">
+                                <span class="sc-JrDLc cGwAnN">Angular</span>
+                                <span class="sc-JrDLc cGwAnN">Nodejs</span>
+                                <span class="sc-JrDLc cGwAnN">Expressjs</span>
+                                <span class="sc-JrDLc cGwAnN">MongoDB</span>
+                                <span class="sc-JrDLc cGwAnN">Web3</span>
+                                <span class="sc-JrDLc cGwAnN">Metamask</span>
+
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">CICCA</h5>
+                                <p class="card-text">Our platform utilizes Web3 technology to ensure secure (MLM) and
+                                    referral transactions within the marketplace. Users can purchase
+                                    plans and earn rewards, including ROI, referral, and matching,
+                                    thereby qualifying for rewards bonuses. Additionally, We managed the MongoDB
+                                    database and
+                                    implemented Node.js for
+                                    efficient functionality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up">
+                        <div class="card bdDvrh  m-2 p-3">
+                            <img src="../../assets/images/osiz.png" class="card-img-top" alt="Image 3">
+                            <div class="sc-fXSgeo hzOFvQ p-2">
+                                <span class="sc-JrDLc cGwAnN">Node.js</span>
+                                <span class="sc-JrDLc cGwAnN">Express.js</span>
+                                <span class="sc-JrDLc cGwAnN">MongoDB</span>
+                                <span class="sc-JrDLc cGwAnN">Mysql</span>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">OSIZ</h5>
+                                <p class="card-text">Osiz Product is an e-commerce-based website specializing in office
+                                    products. Our focus revolves around conceptualizing and delivering comprehensive
+                                    solutions for office needs. Our project incorporates Osiz Product features and
+                                    integrates them seamlessly into the backend through REST API endpoints and MongoDB
+                                    data storage.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center p-4">
+                        <h2><span>skills</span></h2>
+                        <h6>Here are some of my skills on which I have learnt.</h6>
+                    </div>
+                    <div class="col-md-6 sc-koXPp iQVOCK m-3 p-3">
+                        <h5 class="sc-bmzYkS kbXmrw">Frontend</h5>
+                        <div class="sc-iHGNWf gayWQZ">
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/html-1.svg" alt="HTML" class="sc-kOHTFB iQaNoj"
+                                    title="HTML">HTML
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/css-3.svg" alt="CSS" class="sc-kOHTFB iQaNoj"
+                                    title="CSS">CSS
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/javascript.png" alt="JavaScript" class="sc-kOHTFB iQaNoj"
+                                    title="JavaScript">JavaScript
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"
+                                    alt="Bootstrap" class="sc-kOHTFB iQaNoj" title="Bootstrap">Bootstrap
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://blog.ninja-squad.com/assets/images/angular_gradient.png" alt="Angular"
+                                    class="sc-kOHTFB iQaNoj" title="Angular">Angular
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://f-droid.org/repo/com.xayah.databackup.foss/en-US/icon_z4jmdCXLhjNzCnLoBlL29beYo4-jfVQUvLliAbMSsNI=.png"
+                                    alt="Angular Material" class="sc-kOHTFB iQaNoj" title="Angular Material">Angular
+                                Material
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/rxjs-1.svg" alt="Rxjs" class="sc-kOHTFB iQaNoj"
+                                    title="Rxjs">Rxjs
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://w7.pngwing.com/pngs/102/724/png-transparent-sass-preprocessor-scripting-language-css-frontend-sass-logo-3d-icon-thumbnail.png"
+                                    alt="SCSS" class="sc-kOHTFB iQaNoj" title="SCSS">SCSS
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png"
+                                    alt="Typescript" class="sc-kOHTFB iQaNoj" title="Typescript">Typescript
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://cdn.freebiesupply.com/logos/large/2x/blockchain-logo-png-transparent.png"
+                                    alt="blockchain" class="sc-kOHTFB iQaNoj" title="Blockchain">Blockchain
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-md-6  offset6 sc-koXPp iQVOCK m-3 p-3">
+                        <h5 class="sc-bmzYkS kbXmrw">Backend</h5>
+                        <div class="sc-iHGNWf gayWQZ">
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/nodejs-icon.svg" alt="Git" class="sc-kOHTFB iQaNoj"
+                                    title="Node.js">Node.js
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/express-js-11217675-9200670.png"
+                                    alt="GitHub" class="sc-kOHTFB iQaNoj" title="Express.js">Express.js
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://static-00.iconduck.com/assets.00/mongodb-compass-icon-2048x2045-71fe0v1q.png"
+                                    alt="Netlify" class="sc-kOHTFB iQaNoj" title="MongoDB">MongoDB
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/mysql-6.svg" alt="VS Code" class="sc-kOHTFB iQaNoj"
+                                    title="MySQL">MySQL
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/postman.png" alt="Postman" class="sc-kOHTFB iQaNoj"
+                                    title="Postman">Postman
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/aws.png" alt="Vite" class="sc-kOHTFB iQaNoj"
+                                    title="AWS">AWS
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="https://pipedream.com/s.v0/app_XywhLL/logo/orig" alt="chrome devTools"
+                                    class="sc-kOHTFB iQaNoj" title="NPM">NPM
+                            </div>
+
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/paypal-3.svg" alt="chrome devTools"
+                                    class="sc-kOHTFB iQaNoj" title="Paypal">Paypal
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC">
+                                <img src="../../assets/images/stripe-4.svg" alt="chrome devTools"
+                                    class="sc-kOHTFB iQaNoj" title="Stripe">Stripe
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-6 mx-auto sc-koXPp iQVOCK m-2 p-3 ">
+                        <h5 class="sc-bmzYkS kbXmrw">Others</h5>
+                        <div class="sc-iHGNWf gayWQZ">
+                            <div class="sc-dtBdUo jKVZnC"><img
+                                    src="https://seeklogo.com/images/G/git-logo-CD8D6F1C09-seeklogo.com.png" alt="Git"
+                                    class="sc-kOHTFB iQaNoj" title="Git">Git
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC"><img
+                                    src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                                    alt="GitHub" class="sc-kOHTFB iQaNoj" title="GitHub">GitHub
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC"><img
+                                    src="https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png"
+                                    alt="Netlify" class="sc-kOHTFB iQaNoj" title="Netlify">Netlify
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC"><img
+                                    src="https://e7.pngegg.com/pngimages/440/1013/png-clipart-microsoft-visual-studio-visual-studio-code-source-code-editor-computer-icons-coder-blue-angle-thumbnail.png"
+                                    alt="VS Code" class="sc-kOHTFB iQaNoj" title="VS code">VS Code
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC"><img src="../../assets/images/word-1.svg" alt="Vite"
+                                    class="sc-kOHTFB iQaNoj" title="Word">Word
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC"><img
+                                    src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2018/02/chrome-devtools.jpg?fit=1200%2C600&amp;ssl=1"
+                                    alt="chrome devTools" class="sc-kOHTFB iQaNoj" title="chrome devTools">devTools
+                            </div>
+                            <div class="sc-dtBdUo jKVZnC"><img
+                                    src="https://p7.hiclipart.com/preview/335/611/801/logo-windows-8-microsoft-metro-microsoft.jpg"
+                                    alt="windows" class="sc-kOHTFB iQaNoj" title="windows">windows</div>
+                            <div class="sc-dtBdUo jKVZnC"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG1tqgra1aJzIsjcsseDmfs3C5WWC5tYVBIf9z4ZjpJ48s5ltARckTYKLuVthKS_xCj50&usqp=CAU"
+                                    alt="ubuntu" class="sc-kOHTFB iQaNoj" title="ubuntu">ubuntu</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <h2 class="contact-title-1 text-center"><span>Contact Us</span></h2>
+                        <div class="card ">
+                            <div class="card-body">
+                                <h2 class="card-title contact-title">Email Me 🚀</h2>
+                                <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm)">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control contact-input" id="name"
+                                            placeholder="Your Name" formControlName="name" minlength="1" maxlength="50">
+                                        <div *ngIf="contactForm.get('name').invalid && contactForm.get('name').touched"
+                                            class="text-danger">
+                                            <div *ngIf="contactForm.get('name').errors?.required">
+                                                Name is required
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control contact-input" id="email"
+                                            placeholder="Your Email" formControlName="email">
+                                        <div *ngIf="contactForm.get('email').invalid && contactForm.get('email').touched"
+                                            class="text-danger">
+                                            <div *ngIf="contactForm.get('email').errors?.required">Email is required
+                                            </div>
+                                            <div *ngIf="contactForm.get('email').errors?.email">Invalid email format
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control contact-input" id="subject"
+                                            placeholder="Subject" formControlName="subject">
+                                        <div *ngIf="contactForm.get('subject').invalid && contactForm.get('subject').touched"
+                                            class="text-danger">
+                                            <div *ngIf="contactForm.get('subject').errors?.required">Subject is required
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control contact-message" id="message" name="message"
+                                            rows="3" placeholder="Message" formControlName="message"></textarea>
+                                        <div *ngIf="contactForm.get('message').invalid && contactForm.get('message').touched"
+                                            class="text-danger">
+                                            <div *ngIf="contactForm.get('message').errors?.required">Message is required
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary contact-button">Send Message</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="scroll-to-top" (click)="scrollToTop()" [ngClass]="{'show': isShowScroll}">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+
+    
+
+    <footer class="footer">
+        <div class="slider-thumb"></div>
+        <div class="container">
+            <h5>Prem kumar S</h5>
+            <p class="copyright">&copy; 2024 Devel_SPK. All Rights Reserved.</p>
+            <div class="social-icons p-2">
+                <a href="mailto:premkumar250999@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+8825675357"><i class="fas fa-phone"></i></a>
+                <a href="https://github.com/Developer-danRed" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prem-kumar-s-267a73216/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_i_am_s_premkumar__" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/8825675357" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
