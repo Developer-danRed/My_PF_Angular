@@ -1,10 +1,10 @@
 Hii
-# I Am SelvamPremkumar
+# I Am S.Premkumar
 
-## Live Lik: https://selvampremkumar.netlify.app/
+## Live Lik: https://devfolio-premkumar.netlify.app/
 
 #### LICENST:MIT
 
 #### Authors:
 
-- SelvamPremkumar
+- S.Premkumar
